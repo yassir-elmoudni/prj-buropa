@@ -4,6 +4,7 @@ body {
   background: #fff;
   color: #222;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -19,20 +20,11 @@ body {
   }
 }
 
-/* Smooth transitions for better UX */
 button, input {
   transition: all 0.2s ease;
 }
 
-/* Focus styles for accessibility */
 button:focus, input:focus {
   outline: 2px solid #e74c3c;
   outline-offset: 2px;
-}
-
-/* Responsive text sizing */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
 } 

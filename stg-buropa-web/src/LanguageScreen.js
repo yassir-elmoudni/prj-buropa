@@ -10,9 +10,8 @@ const languages = [
 export default function LanguageScreen({ onSelect }) {
   const [selectedLang, setSelectedLang] = useState("en");
   const [userName, setUserName] = useState("");
-  const [step, setStep] = useState("language"); // "language" or "name"
+  const [step, setStep] = useState("language");
 
-  // Load saved name from localStorage
   useEffect(() => {
     const savedName = localStorage.getItem("buropa_user_name");
     if (savedName) {

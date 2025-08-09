@@ -8,6 +8,7 @@ function App() {
   if (!userConfig) {
     return <LanguageScreen onSelect={setUserConfig} />;
   }
+  
   return (
     <VoiceScreen 
       lang={userConfig.lang} 
